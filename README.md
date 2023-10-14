@@ -1,26 +1,31 @@
 # WHMCS TidioChat Integration Module
 
-TidioChat Integration for WHMCS with Client Identification and Tagging
+## Description
 
-This is a WHMCS module for integrating Tidio Chat, a live chat service. This module allows you to automate the process of tagging your WHMCS clients in Tidio and manage them more effectively.
+This module integrates Tidio Chat with WHMCS, enabling better customer support and engagement. Tag your clients based on their activity status within WHMCS and more.
 
-#Features
-Client Identification: Automatically identify logged-in WHMCS clients in Tidio Chat.
+## Features
 
-Client Tagging: Automatically tag clients based on whether they have active services. Two tags are used: "WHMCS Active Client" and "WHMCS Inactive Client".
+- **Auto Tagging**: Automatically tags clients as "WHMCS Active Client" or "WHMCS Inactive Client" based on their active services.
+- **Client Identification**: Sends client information like email, name, and phone number to Tidio Chat.
 
-#Installation
-Download the hooks.php and tidiochat_whmcs.php files
+## Requirements
 
+- WHMCS 8.x or above
+- PHP 8.x or above
 
-Log in to your WHMCS admin panel navigate to Setup -> Addon Modules and activate the module.
+## Installation
 
-#Usage
-Once installed, the module will automatically start tagging new and existing WHMCS clients in your Tidio Chat dashboard.
+1. Download the repository as a ZIP file.
+2. Extract the ZIP file into your WHMCS installation under `modules/addons`.
+3. Rename the extracted folder to `tidiochat_whmcs`, making sure to remove the branch name from the folder name.
+4. Log in to your WHMCS admin panel, navigate to the addons section, and activate the module.
 
-#Configuration
-Update the tidiochat_jsfile setting in tbladdonmodules table to point to your Tidio Chat JavaScript file.
+## Usage
 
+- **Auto Tagging**: Tags are automatically added when the client is on the WHMCS dashboard.
+- **Client Identification**: When a client logs in, their data is sent to Tidio automatically for better customer support.
 
-#Support
-For support, feature requests, or bug reports, please open an issue on this GitHub repository.
+## Contributing
+
+Feel free to create issues or submit pull requests; contributions are welcome!
