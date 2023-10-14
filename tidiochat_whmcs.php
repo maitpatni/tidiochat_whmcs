@@ -16,7 +16,7 @@ function tidiochat_whmcs_config() {
                 'Type' => 'text',
                 'Size' => '256',
                 'Description' => '.js | Enter the JS File Name for Tidio Chat. (.js will be added automatically)',
-                'Placeholder' => 'Example: https://domain.com/path/to/your/file',
+                'Placeholder' => 'Input just the file name from TidioChat manual code install page',
             ],
         ],
     ];
